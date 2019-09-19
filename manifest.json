@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Pomodoro",
+    "version": "1.0.0",
+    "description": "This is a Pomodoro Technique chrome extension",
+    "icons": {
+        "48": "icons/my48.png"
+    },
+    "browser_action":{
+        "default_icon": "icons/my48.png",
+        "default_title": "Pomodoro"
+    },
+    "options_page": "optionPage/option.html",
+    "content_scripts": [
+        {
+          "matches": ["*://*.youtube.com/*"],
+          "js": ["content_script/base_script.js"]
+        }
+      ],
+      "background" :{
+          "scripts" :["background/bg.js"],
+          "persistent" : false
+      },
+      "permissions": [
+        "activeTab", 
+        "alarms"
+      ]
+}
