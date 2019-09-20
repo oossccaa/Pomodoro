@@ -1,0 +1,52 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+    font-family: '微軟正黑體';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#app {
+    text-align: center;
+}
+
+#rest,#success {
+    display: none;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    background: #41c15d;
+    display: inline-block;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #fff;
+    background-color: #07ad2c;
+}
+.btn:active {
+    color: #fff;
+    background-color: #41c15d;
+}
